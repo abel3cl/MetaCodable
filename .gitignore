@@ -111,7 +111,6 @@ iOSInjectionProject/
 
 # Built Products
 *.xcframework*
-*.zip
 *.tar*
 
 # Tuist
