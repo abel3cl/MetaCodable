@@ -1,0 +1,15 @@
+{
+    "schemaVersion": "1.0",
+    "artifacts": {
+        "ProtocolGen": {
+            "version": "{{VERSION}}",
+            "type": "executable",
+            "variants": [
+		        {
+                    "path": "bin/ProtocolGen",
+                    "supportedTriples": ["arm64-apple-macosx"]
+                }
+           ]
+        }
+    }
+}

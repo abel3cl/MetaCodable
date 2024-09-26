@@ -51,7 +51,7 @@ let package = Package(
         .target(name: "MetaCodable", dependencies: ["MacroPlugin"]),
         .target(name: "HelperCoders", dependencies: ["MetaCodable"]),
 
-        // MARK: Build Tool
+        // MARK: ExecutableTarget
         .executableTarget(
             name: "ProtocolGen",
             dependencies: [
@@ -62,6 +62,7 @@ let package = Package(
                 .product(name: "SwiftSyntaxMacroExpansion", package: "swift-syntax"),
             ]
         ),
+        // MARK: Plugin
         .plugin(
             name: "MetaProtocolCodable", capability: .buildTool(),
             dependencies: ["ProtocolGen"]
